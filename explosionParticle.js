@@ -34,5 +34,4 @@ function handleExParticles() {
     exParticles[i].show();
     exParticles[i].update();
   }
-  console.log(exParticles.length);
 }

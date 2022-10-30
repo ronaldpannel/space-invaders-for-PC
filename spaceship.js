@@ -8,7 +8,7 @@ class Ship {
     this.size = 50;
     this.dirX = 0;
     this.color = "white";
-    this.vel = 10;
+    this.vel =0;
   }
   setDir(dir) {
     this.dirX = dir;
