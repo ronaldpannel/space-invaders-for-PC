@@ -68,10 +68,11 @@ function laserSpaceBombCollision() {
           exParticles.push(new ExParticle(lasers[j].x, lasers[j].y));
         }
         score += 100;
-        explosionSound.play()
+        explosionSound.pause();
+        explosionSound.currentTime = 0;
+        explosionSound.play();
         deathStarBombs.splice(i, 1);
         lasers.splice(j, 1);
-
       }
     }
   }

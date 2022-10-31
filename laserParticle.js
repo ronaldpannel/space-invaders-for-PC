@@ -39,6 +39,8 @@ function laserInvaderCollision(opacity) {
         for (let i = 0; i < 10; i++) {
           exParticles.push(new ExParticle(lasers[j].x, lasers[j].y));
         }
+        explosionSound.pause();
+        explosionSound.currentTime = 0;
         explosionSound.play();
         score++;
         invaders.splice(i, 1);
